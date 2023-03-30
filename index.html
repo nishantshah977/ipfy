@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPLogger - Made By Nishant Shah</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+   <div class="hero min-h-screen bg-base-200">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="text-center lg:text-left">
+      <h1 class="text-5xl font-bold">IPfy</h1>
+      <p class="py-6">IPfy is a simple and reliable tool that enables users to retrieve IP address and user agent information quickly and easily by sending a url.</p>
+    </div>
+    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <div class="card-body">
+        <div class="form-control">
+            <form method="post" action="/form_handle.php">
+          <label class="label">
+            <span class="label-text">Enter URL</span>
+          </label>
+          <input type="text" placeholder="http://" class="input input-bordered" name="url" />
+          <input type="hidden" id="tracking_code" name="tracking_code">
+        </div>
+        <div class="form-control mt-6">
+          <button type="submit" class="btn btn-primary">Create URL</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="form_handle.js"></script>
+
+</body>
+</html>
